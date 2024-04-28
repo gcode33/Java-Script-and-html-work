@@ -1,0 +1,33 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="generator" content="PSPad editor, www.pspad.com">
+  <title></title>
+  <script>
+  function subtraction(num1,num2){
+    return (num1 - num2);
+
+  
+  }
+   function addition(num1,num2){
+   return (num1 + num2);
+  
+  }
+  </script>
+  </head>
+  <body>
+  <h1>Calculation for the two numbers</h1>
+  <form action="">
+  
+Number 1 <input type= "text" id="num1" value="0"><br>
+Number 2 <input type= "text" id="num2" value="0"><br>
+Result <input type= "text" id="result" value="0"><br>
+<input type="button" onclick= "document.getElementById('result').value= subtraction(Number(document.getElementById('num1').value),Number(document.getElementById('num2').value)) " value = "subtraction">
+<input type="button" onclick= "document.getElementById('result').value= addition(Number(document.getElementById('num1').value),Number(document.getElementById('num2').value)) " value = "addition">
+
+
+</form>
+
+  </body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: red;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+.tooltip:hover::after {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: calc(50% - 5px);
+  border-width: 5px;
+  border-style: solid;
+  border-color: red transparent transparent transparent;
+}
+</style>
+</head>
+<body>
+
+<h2>Form Example</h2>
+
+<form action="/action_page.php">
+<label for="fname">First name:</label>
+<input type="text" id="fname" name="fname"><span class="tooltip">*</span>
+<br><br>
+<label for="lname">Last name:</label>
+<input type="text" id="lname" name="lname"><span class="tooltip">*</span>
+</form>
+
+<div class="tooltip">
+<span class="tooltiptext">This field is required.</span>*
+</div>
+
+<div class="tooltip">
+<span class="tooltiptext">This field is optional.</span>*
+</div>
+
+</body>
+</html>
+

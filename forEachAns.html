@@ -1,0 +1,27 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="generator" content="PSPad editor, www.pspad.com">
+  <title></title>
+  </head>
+  <body>
+  <script>
+
+var donuts = [
+  { type: "Jelly", cost: 1.22 },
+  { type: "Chocolate", cost: 2.45 },
+  { type: "Cider", cost: 1.59 },
+  { type: "Boston Cream", cost: 5.99 }
+];
+
+donuts.forEach(function(donut) {
+
+console.log(donut.type + " donuts cost " + donut.cost + " each");
+});
+
+donuts.forEach(function(donut) { console.log(`${donut.type} donut costs $${donut.cost} each`)});
+</script>
+
+  </body>
+</html>
